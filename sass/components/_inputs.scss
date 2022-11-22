@@ -11,25 +11,30 @@
   color: $main-bg-color;
 }
 
-.footer__input-field {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+// .footer__input-field {
+//   display: flex;
+//   flex-direction: column;
+//   flex-grow: 1;
 
-  margin-right: 10px;
-}
+//   margin-right: 10px;
+// }
 
 .footer__input-div {
   position: relative;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  // display: inline-flex;
+  // justify-content: space-between;
+  // align-items: flex-end;
 
   height: 86px;
   width: 570px;
 }
 
 .footer__input {
+  // for mobile
+  display: block;
+
+
+  
   height: 50px;
   margin-top: 0;
   padding: 15px;

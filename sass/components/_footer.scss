@@ -35,17 +35,17 @@
 }
 
 .footer__social {
-  display: flex;
+  // display: flex;
   flex-wrap: wrap;
 
   width: 206px;
   height: 80px;
 }
 
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-}
+// .footer__container {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 .footer__list-item:not(:last-child) {
   margin-bottom: 9px;
@@ -61,11 +61,11 @@
   gap: 10px;
 }
 
-.footer__label {
-  display: inline-flex;
-  padding-top: 15px;
-  gap: 93px;
-}
+// .footer__label {
+//   display: inline-flex;
+//   padding-top: 15px;
+//   gap: 93px;
+// }
 
 .footer__icon-send {
   margin-left: 10px;

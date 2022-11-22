@@ -1,6 +1,10 @@
 .main-nav__list {
   display: flex;
   margin-left: 95px;
+
+
+    // for mobile temporary
+  display: none;
 }
 
 .main-nav__item:not(:last-child) {

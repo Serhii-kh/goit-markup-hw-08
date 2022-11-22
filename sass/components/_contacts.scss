@@ -1,16 +1,16 @@
 .contacts-list {
-  display: flex;
+  // display: flex;
   margin-left: auto;
 }
 
 .contacts-list__link {
-  @include centeredFlex();
+  // @include centeredFlex();
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  
+
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -20,4 +20,7 @@
   &:focus {
     color: $focus-color;
   }
+
+  // for mobile temporary
+  display: none;
 }

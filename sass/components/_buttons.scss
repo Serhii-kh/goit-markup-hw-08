@@ -5,14 +5,14 @@
 }
 
 .footer__submit-button {
-  @include centeredFlex();
+  // @include centeredFlex();
 
   padding: 10px 28px;
   height: 50px;
 }
 
 .filter {
-  @include centeredFlex();
+  // @include centeredFlex();
 
   margin-bottom: 34px;
 }
@@ -74,7 +74,7 @@
 }
 
 .submit-button-thumb {
-  @include centeredFlex();
+  // @include centeredFlex();
   width: 100%;
 }
 
