@@ -1,0 +1,33 @@
+.clients__item {
+  @include centeredFlex();
+
+  width: 170px;
+  height: 92px;
+}
+
+.clients__link {
+  @include centeredFlex();
+
+  width: 100%;
+  height: 100%;
+  border: solid 1px $for-icons-color;
+  border-radius: 4px;
+  color: $for-icons-color;
+
+  transition-property: color, border-color;
+  @include basicTransition;
+
+  &:hover,
+  &:focus {
+    color: $focus-color;
+    border-color: currentColor;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}

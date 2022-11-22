@@ -1,0 +1,27 @@
+.main-nav__list {
+  display: flex;
+  margin-left: 95px;
+}
+
+.main-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.main-nav__link {
+  display: block;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-color;
+
+  @include generalTransition;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+  color: $focus-color;
+}

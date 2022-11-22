@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  text-decoration: none;
+}
+
+.logo__web,
+.footer__logo-web {
+  color: $focus-color;
+}
+
+.page-header__logo {
+  color: #000000;
+}
+
+.footer__logo {
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 20px;
+}

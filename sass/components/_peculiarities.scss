@@ -1,0 +1,34 @@
+.thumb {
+  @include centeredFlex();
+  margin-bottom: 30px;
+  height: 120px;
+
+  border-radius: 4px;
+
+  background-color: $bg-second-color;
+}
+
+.peculiarities__item {
+  min-width: 270px;
+}
+
+.peculiarities__list {
+  display: flex;
+}
+
+.peculiarities__title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.peculiarities__description {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.peculiarities__item:not(:last-child) {
+  margin-right: 30px;
+}

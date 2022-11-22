@@ -1,0 +1,78 @@
+.work__title,
+.team__main-title,
+.clients__title {
+  margin-bottom: 50px;
+}
+
+.team__main-title,
+.work__title,
+.clients__title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team__list,
+.clients__list {
+  @include centeredFlex();
+}
+
+.footer__social-link,
+.team__link {
+  @include centeredFlex();
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: $for-icons-color;
+
+  transition-property: color, background-color;
+  @include basicTransition();
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus,
+.team__link:hover,
+.team__link:focus {
+  color: $main-bg-color;
+  background-color: $focus-color;
+}
+
+.team__icon,
+.footer__social-icon {
+  fill: currentColor;
+}
+
+.work__description,
+.footer__input-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $main-bg-color;
+}
+
+.work__item,
+.nav-item {
+  position: relative;
+}
+
+.hero-section__button,
+.submit__button,
+.footer__submit-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  color: $main-bg-color;
+  background: $focus-color;
+
+  border-radius: 4px;
+  border: $focus-color;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

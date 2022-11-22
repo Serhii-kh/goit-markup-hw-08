@@ -1,0 +1,88 @@
+.footer__input-label {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $main-bg-color;
+}
+
+.footer__input-field {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  margin-right: 10px;
+}
+
+.footer__input-div {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  height: 86px;
+  width: 570px;
+}
+
+.footer__input {
+  height: 50px;
+  margin-top: 0;
+  padding: 15px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  @include generalTransition(border);
+}
+
+.footer__input-div::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input {
+  margin-top: 4px;
+
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.input {
+  @include generalTransition(border);
+}
+
+.input:focus {
+  border-color: $focus-color;
+  outline: $focus-color;
+
+  cursor: pointer;
+}
+
+.input {
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.checkbox {
+  position: absolute;
+
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

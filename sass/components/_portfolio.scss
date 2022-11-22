@@ -1,0 +1,38 @@
+.portfolio__link {
+  @include generalTransition(box-shadow);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio__title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $main-color;
+
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+}
+
+.portfolio__description {
+  padding-left: 24px;
+  padding-bottom: 20px;
+  
+  line-height: 1.875;
+
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
