@@ -94,14 +94,25 @@ img,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-size: 26px;
+  }
 }
 
 .logo__web,
@@ -114,9 +125,9 @@ img,
 }
 
 .footer__logo {
+  margin-bottom: 20px;
   padding-bottom: 0;
   padding-top: 0;
-  margin-bottom: 20px;
 }
 
 .main-nav__list {
@@ -154,12 +165,8 @@ img,
 }
 
 .hero-section {
-  max-width: 1600px;
-  height: 600px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   background: #2f303a;
   background-repeat: no-repeat;
@@ -167,22 +174,51 @@ img,
   background-position: center;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-Img.jpg);
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-Img.jpg);
+  max-width: 480px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .hero-section {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-section__title {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.4;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1600px) {
+  .hero-section__title {
+    font-size: 44px;
+    line-height: 1.4;
+  }
+}
 
 .hero-section__button {
-  min-width: 216px;
   margin-top: 30px;
-  padding: 10px 32px;
+  min-width: 200px;
+  padding: 10px 24px;
+}
+@media screen and (min-width: 1600px) {
+  .hero-section__button {
+    min-width: 216px;
+    padding: 10px 32px;
+  }
 }
 
 .footer__submit-button {
