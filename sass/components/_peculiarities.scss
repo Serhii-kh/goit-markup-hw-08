@@ -8,10 +8,6 @@
   background-color: $bg-second-color;
 }
 
-.peculiarities__item {
-  min-width: 270px;
-}
-
 // .peculiarities__list {
 //   display: flex;
 // }
@@ -22,11 +18,24 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  @media screen and(max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .peculiarities__description {
   font-size: 14px;
   line-height: 1.7;
+}
+
+// .peculiarities__item {
+//   min-width: 270px;
+// }
+
+
+.peculiarities__item {
+
 }
 
 .peculiarities__item:not(:last-child) {

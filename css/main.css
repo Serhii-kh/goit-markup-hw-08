@@ -175,7 +175,7 @@ img,
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-Img.jpg);
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-Img.jpg);
   max-width: 480px;
-  height: 400px;
+  max-height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
 }
@@ -656,15 +656,16 @@ textarea::placeholder {
   background-color: #f5f4fa;
 }
 
-.peculiarities__item {
-  min-width: 270px;
-}
-
 .peculiarities__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .peculiarities__title {
+    text-align: center;
+  }
 }
 
 .peculiarities__description {
