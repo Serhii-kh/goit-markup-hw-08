@@ -661,6 +661,8 @@ textarea::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 30px;
   }
 }
@@ -969,7 +971,17 @@ textarea::placeholder {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 30px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__foto {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
