@@ -720,6 +720,21 @@ textarea::placeholder {
   color: #2196f3;
 }
 
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
 .clients__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,8 +745,18 @@ textarea::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
-  height: 92px;
+  min-width: 170px;
+  max-height: 92px;
+}
+@media screen and (max-width: 767px) {
+  .clients__item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1599px) {
+  .clients__item {
+    width: 33.3333333333%;
+  }
 }
 
 .clients__link {
@@ -763,10 +788,6 @@ textarea::placeholder {
 
 .clients__icon {
   fill: currentColor;
-}
-
-.clients__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .work__title,

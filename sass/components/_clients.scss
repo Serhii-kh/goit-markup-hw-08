@@ -1,8 +1,24 @@
+.clients__list {
+  @include centeredFlex();
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
 .clients__item {
   @include centeredFlex();
 
-  width: 170px;
-  height: 92px;
+  min-width: 170px;
+  max-height: 92px;
+
+	@media screen and(max-width: 767px) {
+		width: calc(100% / 2);
+
+		@media screen and(min-width: 768px) and(max-width: 1599px) {
+			width: calc(100% / 3);
+			
+		}
+		
+	}
 }
 
 .clients__link {
@@ -26,8 +42,4 @@
 
 .clients__icon {
   fill: currentColor;
-}
-
-.clients__item:not(:last-child) {
-  margin-right: 30px;
 }
