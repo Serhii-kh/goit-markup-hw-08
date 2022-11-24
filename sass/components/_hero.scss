@@ -20,13 +20,16 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  @media screen and(min-width: 768px) {
-    max-width: 768px;
-  }
+@media screen and(min-width: 768px) {
+	min-width: 768px;
+
+
+	
+}
 
   @media screen and(min-width: 1600px) {
-    max-width: 1600px;
-    height: 600px;
+    min-width: 1600px;
+    max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }

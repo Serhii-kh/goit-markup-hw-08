@@ -1,20 +1,19 @@
 .thumb {
   @include centeredFlex();
   margin-bottom: 30px;
-  height: 120px;
+  min-height: 120px;
 
   border-radius: 4px;
 
   background-color: $bg-second-color;
 }
 
-.peculiarities__item {
-  min-width: 270px;
+.peculiarities__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
 }
-
-// .peculiarities__list {
-//   display: flex;
-// }
 
 .peculiarities__title {
   margin-bottom: 10px;
@@ -22,6 +21,10 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  @media screen and(max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .peculiarities__description {
@@ -29,6 +32,15 @@
   line-height: 1.7;
 }
 
-.peculiarities__item:not(:last-child) {
-  margin-right: 30px;
+.peculiarities__item {
+  @media screen and(min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+		flex-wrap: wrap;
+  }
+
+  @media screen and(min-width: 1600px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
