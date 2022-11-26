@@ -32,10 +32,9 @@
     width: calc((100% - 30px) / 2);
   }
 
-  @media screen and(min-width: 1600px) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+  @media screen and(min-width: 1200px) {
+		width: calc((100% - 30px * 3) / 4);
+ 
   }
 }
 
@@ -44,13 +43,13 @@
     @include centeredFlex();
     flex-wrap: wrap;
     gap: 30px;
-		width: calc(100% / 2);
   }
+
 }
 
 
 .team__foto {
-	@media screen and(max-width: 767px) {
+	@media screen and(max-width: 1119px) {
 margin-right: auto;
 margin-left: auto;
 		

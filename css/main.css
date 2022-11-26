@@ -184,9 +184,9 @@ img,
     min-width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero-section {
-    min-width: 1600px;
+    max-width: 1600px;
     max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -202,7 +202,7 @@ img,
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero-section__title {
     font-size: 44px;
     line-height: 1.4;
@@ -667,6 +667,17 @@ textarea::placeholder {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .peculiarities__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .peculiarities__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
 .peculiarities__title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -682,19 +693,6 @@ textarea::placeholder {
 .peculiarities__description {
   font-size: 14px;
   line-height: 1.7;
-}
-
-@media screen and (min-width: 768px) {
-  .peculiarities__item {
-    width: calc((100% - 30px) / 2);
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .peculiarities__item:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .contacts-list {
@@ -975,9 +973,9 @@ textarea::placeholder {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
-  .team__item:not(:last-child) {
-    margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -995,11 +993,10 @@ textarea::placeholder {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
-    width: 50%;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1119px) {
   .team__foto {
     margin-right: auto;
     margin-left: auto;

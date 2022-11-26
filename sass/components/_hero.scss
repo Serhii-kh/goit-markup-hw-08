@@ -27,8 +27,8 @@
 	
 }
 
-  @media screen and(min-width: 1600px) {
-    min-width: 1600px;
+  @media screen and(min-width: 1200px) {
+    max-width: 1600px;
     max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -45,7 +45,7 @@
   text-transform: uppercase;
   color: $main-bg-color;
 
-  @media screen and(min-width: 1600px) {
+  @media screen and(min-width: 1200px) {
     font-size: 44px;
     line-height: 1.4;
   }
