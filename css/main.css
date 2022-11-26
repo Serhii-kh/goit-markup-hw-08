@@ -776,9 +776,14 @@ textarea::placeholder {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (max-width: 767px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .clients__item {
     width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
   }
 }
 
