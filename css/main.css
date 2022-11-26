@@ -222,8 +222,22 @@ img,
 }
 
 .footer__submit-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 28px;
   height: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .footer__submit-button {
+    margin-top: 20px;
+  }
 }
 
 .filter {
@@ -345,6 +359,11 @@ img,
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  .footer__title {
+    text-align: center;
+  }
+}
 
 .footer__social {
   -ms-flex-wrap: wrap;
@@ -353,11 +372,13 @@ img,
   height: 80px;
 }
 
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media screen and (max-width: 767px) {
   .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -368,6 +389,13 @@ img,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -384,6 +412,7 @@ img,
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -403,6 +432,31 @@ img,
   gap: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-top: 15px;
+    gap: 93px;
+  }
+}
+
 .footer__icon-send {
   margin-left: 10px;
   fill: #ffffff;
@@ -418,14 +472,70 @@ img,
   color: #ffffff;
 }
 
-.footer__input-div {
-  position: relative;
-  height: 86px;
-  width: 570px;
+.footer__input-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .footer__input-field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input-field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__input-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input-div {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 86px;
+    width: 570px;
+  }
 }
 
 .footer__input {
-  display: block;
   height: 50px;
   margin-top: 0;
   padding: 15px;
@@ -438,6 +548,13 @@ img,
           transition-duration: 250ms;
   -webkit-transition-timing-function: var(--main-cubic-bezier);
           transition-timing-function: var(--main-cubic-bezier);
+}
+@media screen and (max-width: 767px) {
+  .footer__input {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .footer__input-div::-webkit-input-placeholder {

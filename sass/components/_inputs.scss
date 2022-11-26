@@ -11,30 +11,41 @@
   color: $main-bg-color;
 }
 
-// .footer__input-field {
-//   display: flex;
-//   flex-direction: column;
-//   flex-grow: 1;
+.footer__input-field {
+  display: flex;
 
-//   margin-right: 10px;
-// }
+  @media screen and(max-width: 767px) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @media screen and(min-width: 1200px) {
+    flex-direction: column;
+    flex-grow: 1;
+
+    margin-right: 10px;
+  }
+}
 
 .footer__input-div {
-  position: relative;
-  // display: inline-flex;
-  // justify-content: space-between;
-  // align-items: flex-end;
+  @media screen and(max-width: 767px) {
+		@include centeredFlex();
+		flex-direction: column;
+    margin-top: 60px;
+    width: 100%;
+  }
+  @media screen and(min-width: 1200px) {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
-  height: 86px;
-  width: 570px;
+    height: 86px;
+    width: 570px;
+  }
 }
 
 .footer__input {
-  // for mobile
-  display: block;
-
-
-  
   height: 50px;
   margin-top: 0;
   padding: 15px;
@@ -44,6 +55,10 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 
   @include generalTransition(border);
+
+  @media screen and(max-width:767px) {
+    flex-grow: 1;
+  }
 }
 
 .footer__input-div::placeholder {
