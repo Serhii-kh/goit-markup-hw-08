@@ -14,7 +14,11 @@
 .footer__input-field {
   display: flex;
 
-  @media screen and(max-width: 767px) {
+@media screen and(min-width: 768px) and(max-width: 1199px) {
+	align-items: center;
+}
+
+  @media screen and(max-width: 1199px) {
     flex-direction: column;
     width: 100%;
   }
@@ -28,12 +32,23 @@
 }
 
 .footer__input-div {
-  @media screen and(max-width: 767px) {
+	width: 100%;
+
+@media screen and(max-width: 767px) {
+	margin-top: 60px;
+}
+
+@media screen and(min-width: 768px) {
+	min-width: 450px;
+}
+
+  @media screen and(max-width: 1199px) {
 		@include centeredFlex();
 		flex-direction: column;
-    margin-top: 60px;
-    width: 100%;
+  
   }
+
+	
   @media screen and(min-width: 1200px) {
     position: relative;
     display: inline-flex;
@@ -56,8 +71,9 @@
 
   @include generalTransition(border);
 
-  @media screen and(max-width:767px) {
-    flex-grow: 1;
+  @media screen and(min-width:768px) and(max-width: 1199px) {
+		min-width: 450px;
+   
   }
 }
 
