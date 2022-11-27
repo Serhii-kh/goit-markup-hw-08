@@ -1,9 +1,16 @@
 .page-header {
+	position: relative;
   border-bottom: 1px solid #ececec;
 }
 
 .page-header__container {
-  @include centeredFlex;
+    @include centeredFlex;
+
+		@media screen and(max-width: 767px) {
+			justify-content: space-between;
+			
+		}
+  
 }
 
 .page-header__icon {
@@ -21,7 +28,9 @@
 
   width: 100%;
   height: 4px;
-  
+
   border-radius: 2px;
   background-color: $focus-color;
 }
+
+

@@ -35,4 +35,10 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: $letter-spacing;
+
+	@media screen and(max-width: 1199px) {
+		font-size: 12px;
+		line-height: 1.2;
+		
+	}
 }
