@@ -1,10 +1,10 @@
 .contacts-list {
-  // display: flex;
+  display: flex;
   margin-left: auto;
 }
 
 .contacts-list__link {
-  // @include centeredFlex();
+  @include centeredFlex();
 
   font-weight: 500;
   font-size: 14px;
@@ -21,6 +21,4 @@
     color: $focus-color;
   }
 
-  // for mobile temporary
-  display: none;
 }
