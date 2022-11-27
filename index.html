@@ -64,7 +64,13 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="menu-button menu-toggle js-close-menu">
+        <button
+          type="button"
+          class="menu-button menu-toggle js-close-menu"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
           <svg width="40" height="40">
             <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             <use
@@ -678,6 +684,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
