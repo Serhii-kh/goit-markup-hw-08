@@ -104,6 +104,20 @@ img,
             flex-grow: 1;
   }
 }
+.menu-container.is-open {
+  display: block;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+}
 
 .container {
   margin: 0 auto;
@@ -481,7 +495,7 @@ img,
   .footer__social {
     position: absolute;
     top: 5px;
-    right: 15px;
+    right: 35px;
   }
 }
 
