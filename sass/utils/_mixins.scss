@@ -6,12 +6,12 @@
 
 @mixin basicTransition() {
   transition-duration: 250ms;
-  transition-timing-function: var(--main-cubic-bezier);
+  transition-timing-function: $main-cubic-bezier;
 }
 
 @mixin generalTransition($property: color) {
   transition-property: $property;
   transition-duration: 250ms;
-  transition-timing-function: var(--main-cubic-bezier);
+  transition-timing-function: $main-cubic-bezier;
 }
 

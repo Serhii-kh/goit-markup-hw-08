@@ -75,20 +75,25 @@ img,
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
-  z-index: 999;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  padding: 48px 40px;
+  background-color: #ffffff;
+  z-index: 5;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media screen and (min-width: 768px) {
@@ -97,11 +102,98 @@ img,
   }
 }
 
-.main-nav__list-mobile,
-.contacts-list-mobile {
+.menu-toggle {
+  min-height: 44px;
+  min-width: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.menu-container .menu-toggle:focus, .menu-container .menu-toggle:hover {
+  fill: #2196f3;
+}
+
+.main-nav__list.mobile,
+.contacts-list.mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-nav__list.mobile {
+  margin: 0;
+  gap: 32px;
+}
+
+.main-nav__item.mobile:not(:last-child) {
+  margin-right: 0;
+}
+
+.main-nav__link.mobile {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.contacts-list__link.phone {
+  font-size: 34px;
+  color: #2196f3;
+}
+
+.contacts-list__link.mobile {
+  font-size: 24px;
+}
+
+.contacts-list__link.phone,
+.contacts-list__link.mobile {
+  padding: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.contacts-list.mobile {
+  margin-top: 302px;
+  gap: 32px;
+}
+
+.contacts-list__item.mobile:not(:last-child) {
+  margin-right: 0;
 }
 
 .container {
@@ -239,8 +331,8 @@ img,
   transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-nav__link:hover,
@@ -371,8 +463,8 @@ img,
   transition-property: color, background-color, box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter__button:hover, .filter__button:focus {
   color: #ffffff;
@@ -405,8 +497,8 @@ img,
   transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close__button:hover, .close__button:focus {
   fill: #2196f3;
@@ -432,8 +524,8 @@ img,
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .submit__button:hover, .submit__button:focus {
   background-color: #188ce8;
@@ -461,8 +553,8 @@ img,
   transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__link:hover, .footer__link:focus {
   color: #2196f3;
@@ -711,8 +803,8 @@ img,
   transition-property: border;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__input {
@@ -767,8 +859,8 @@ input {
   transition-property: border;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:focus {
@@ -807,8 +899,8 @@ input {
   transition-property: opacity;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -859,8 +951,8 @@ textarea {
   transition-property: border;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 textarea:focus {
   border-color: #2196f3;
@@ -1098,8 +1190,8 @@ textarea::placeholder {
   transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list__link:hover, .contacts-list__link:focus {
   color: #2196f3;
@@ -1165,8 +1257,8 @@ textarea::placeholder {
   transition-property: color, border-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover, .clients__link:focus {
   color: #2196f3;
@@ -1210,8 +1302,8 @@ textarea::placeholder {
   transition-property: color, background-color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__social-link:hover,
@@ -1301,8 +1393,8 @@ textarea::placeholder {
   transition-property: box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__link:hover, .portfolio__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1440,8 +1532,8 @@ textarea::placeholder {
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
@@ -1522,8 +1614,8 @@ textarea::placeholder {
   transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--main-cubic-bezier);
-          transition-timing-function: var(--main-cubic-bezier);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:focus + .modal-form__icon {
