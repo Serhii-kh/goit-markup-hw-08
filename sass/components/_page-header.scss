@@ -30,7 +30,12 @@
   height: 4px;
 
   border-radius: 2px;
-  background-color: $focus-color;
+  background-color: $focus-color; 
+
+	@media screen and(max-width: 767px) {
+		display: none;
+		
+	}
 }
 
 
