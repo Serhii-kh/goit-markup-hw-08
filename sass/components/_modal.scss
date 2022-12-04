@@ -11,7 +11,12 @@
   @include generalTransition(transform);
   transform: translate(-50%, -50%) scale(1);
 
-  @media screen and(max-width: 1199px) {
+  @media screen and(max-width: 767px) {
+    top: 270px;
+    width: 100%;
+  }
+
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
     min-width: 450px;
   }
 
@@ -47,8 +52,8 @@
   @include centeredFlex;
 
   position: absolute;
-  left: 18px;
-  bottom: 5px;
+  left: -20px;
+  bottom: 15px;
 
   width: 16px;
   height: 15px;
@@ -58,9 +63,16 @@
   border: 2px solid $main-color;
   border-radius: 2px;
 
-  @media screen and(max-width:1199px) {
-    left: 38px;
-    bottom: 0px;
+@media screen and(min-width: 410px) {
+bottom: 2px;
+}
+
+  // @media screen and(min-width: 768px) {
+  //   left: 5px;
+  // }
+
+  @media screen and(min-width:1200px) {
+    bottom: 5px;
   }
 }
 
