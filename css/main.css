@@ -1609,12 +1609,13 @@ textarea::placeholder {
 @media screen and (max-width: 767px) {
   .modal {
     top: 270px;
-    width: 100%;
+    width: 90%;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
-    min-width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {

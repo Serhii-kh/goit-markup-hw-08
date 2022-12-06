@@ -13,11 +13,12 @@
 
   @media screen and(max-width: 767px) {
     top: 270px;
-    width: 100%;
+    width: 90%;
+		max-width: 450px;
   }
 
   @media screen and(min-width: 768px) and(max-width: 1199px) {
-    min-width: 450px;
+    max-width: 450px;
   }
 
   @media screen and(min-width: 1200px) {
