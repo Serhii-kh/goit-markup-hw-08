@@ -8,7 +8,7 @@
   background-color: $main-bg-color;
   z-index: 5;
 
-  transform: translateX(-130%);
+  transform: translateX(-150%);
   @include basicTransition;
 
   @media screen and(min-width: 768px) {
@@ -42,7 +42,13 @@
   @media screen and(min-width: 768px) {
     display: none;
   }
-  @include generalTransition;
+  @include generalTransition(fill);
+
+  &.js-close-menu {
+    &:hover {
+      fill: $focus-color;
+    }
+  }
 }
 
 .menu-container .menu-toggle {

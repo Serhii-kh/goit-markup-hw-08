@@ -79,8 +79,8 @@ img,
   padding: 48px 40px;
   background-color: #ffffff;
   z-index: 5;
-  -webkit-transform: translateX(-130%);
-          transform: translateX(-130%);
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -121,8 +121,8 @@ img,
   border: none;
   border-radius: 50%;
   outline: none;
-  -webkit-transition-property: color;
-  transition-property: color;
+  -webkit-transition-property: fill;
+  transition-property: fill;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -132,6 +132,9 @@ img,
   .menu-toggle {
     display: none;
   }
+}
+.menu-toggle.js-close-menu:hover {
+  fill: #2196f3;
 }
 
 .menu-container .menu-toggle {
