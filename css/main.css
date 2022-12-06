@@ -193,6 +193,7 @@ img,
 
 .contacts-list.mobile {
   gap: 32px;
+  margin-top: 300px;
 }
 
 .contacts-list__item.mobile:not(:last-child) {
