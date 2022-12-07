@@ -48,7 +48,6 @@
 
   max-width: 206px;
   max-height: 80px;
-
 }
 
 // .footer__container {
@@ -70,8 +69,6 @@
 //   }
 // }
 
-
-
 .footer__list-item:not(:last-child) {
   @media screen and(max-width: 1199px) {
     margin-bottom: 8px;
@@ -92,7 +89,6 @@
 .footer__social-link {
   color: $main-bg-color;
 }
-
 
 .footer__icon-send {
   margin-left: 10px;
