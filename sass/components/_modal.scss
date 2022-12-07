@@ -11,13 +11,9 @@
   @include generalTransition(transform);
   transform: translate(-50%, -50%) scale(1);
 
-  @media screen and(max-width: 767px) {
-    top: 270px;
-    width: 90%;
-		max-width: 450px;
-  }
 
-  @media screen and(min-width: 768px) and(max-width: 1199px) {
+
+  @media screen and(max-width: 1199px) {
     max-width: 450px;
   }
 

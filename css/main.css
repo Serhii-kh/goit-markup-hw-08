@@ -1517,6 +1517,12 @@ textarea::placeholder {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    width: 100%;
+    max-width: 450px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__item {
     width: calc((100% - 30px) / 2);
@@ -1620,14 +1626,7 @@ textarea::placeholder {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
-@media screen and (max-width: 767px) {
-  .modal {
-    top: 270px;
-    width: 90%;
-    max-width: 450px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .modal {
     max-width: 450px;
   }
