@@ -748,6 +748,10 @@ address {
   gap: 10px;
 }
 
+.footer__social-link {
+  color: #ffffff;
+}
+
 @media screen and (max-width: 767px) {
   .footer__label {
     display: -webkit-box;
@@ -1373,7 +1377,6 @@ textarea::placeholder {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: #afb1b8;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
   -webkit-transition-duration: 250ms;
@@ -1571,6 +1574,10 @@ textarea::placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+
+.team__link {
+  color: #afb1b8;
 }
 
 @media screen and (max-width: 1199px) {

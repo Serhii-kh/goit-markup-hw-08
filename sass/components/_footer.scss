@@ -105,6 +105,10 @@
   gap: 10px;
 }
 
+.footer__social-link {
+  color: $main-bg-color;
+}
+
 .footer__label {
   @media screen and(max-width: 767px) {
     display: flex;
