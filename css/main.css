@@ -76,6 +76,10 @@ img,
   color: #2196f3;
 }
 
+address {
+  font-style: normal;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -621,7 +625,6 @@ img,
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  font-style: var(--font-style);
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition-property: color;
   transition-property: color;
