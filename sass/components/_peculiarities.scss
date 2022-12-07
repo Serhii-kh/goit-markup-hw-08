@@ -9,23 +9,19 @@
 }
 
 .peculiarities__list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-		flex-wrap: wrap;
-    gap: 30px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .peculiarities__item {
   @media screen and(min-width: 768px) {
     width: calc((100% - 30px) / 2);
-		
   }
 
   @media screen and(min-width: 1200px) {
-		width: calc((100% - 30px * 3) / 4);
-
-	}
+    width: calc((100% - 30px * 3) / 4);
+  }
 }
 
 .peculiarities__title {
@@ -44,5 +40,3 @@
   font-size: 14px;
   line-height: 1.7;
 }
-
-

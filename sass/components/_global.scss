@@ -15,15 +15,14 @@ body {
 }
 
 body.modal-open {
-	overflow: hidden;
+  overflow: hidden;
 }
-
 
 img,
 .portfolio__link {
   display: block;
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .list {
@@ -33,10 +32,14 @@ img,
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
 
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
