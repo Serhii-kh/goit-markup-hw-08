@@ -369,7 +369,6 @@ address {
 }
 
 .footer__logo {
-  margin-bottom: 20px;
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -673,12 +672,6 @@ address {
   max-width: 206px;
   max-height: 80px;
 }
-@media screen and (max-width: 767px) {
-  .footer__social {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__social {
     -webkit-box-pack: start;
@@ -697,6 +690,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 60px;
 }
 @media screen and (max-width: 767px) {
   .footer__container {
@@ -717,7 +711,6 @@ address {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
-    gap: 60px;
     padding-left: 75px;
     padding-right: 90px;
   }
@@ -728,15 +721,6 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-}
-
-.footer__list-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-@media screen and (max-width: 1199px) {
-  .footer__list-item:not(:last-child) {
-    margin-bottom: 8px;
   }
 }
 
@@ -772,12 +756,14 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 8px;
 }
 @media screen and (min-width: 1200px) {
   .footer__list {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    gap: 9px;
   }
 }
 
@@ -792,6 +778,7 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
 }
 @media screen and (min-width: 1200px) {
   .footer__logo-contacts {
