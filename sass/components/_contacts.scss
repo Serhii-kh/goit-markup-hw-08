@@ -1,16 +1,15 @@
 .contacts-list {
   display: flex;
   margin-left: auto;
-@media screen and(max-width: 767px) {
-	display: none;
-	
-}
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
 
   @media screen and(min-width: 768px) and(max-width: 1199px) {
     flex-direction: column;
     align-items: start;
-		justify-content: center;
-		gap: 10px;
+    justify-content: center;
+    gap: 10px;
   }
 }
 
@@ -19,6 +18,10 @@
   @media screen and(min-width: 768px) and(max-width: 1199px) {
     margin-right: 0;
   }
+}
+
+.contacts-list.mobile {
+  align-items: start;
 }
 
 .contacts-list__link {
@@ -39,8 +42,7 @@
     color: $focus-color;
   }
 
-	@media screen and(min-width: 768px) and(max-width: 1199px) {
-		padding: 0;
-		
-	}
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    padding: 0;
+  }
 }

@@ -3,11 +3,6 @@
   padding-bottom: 60px;
 
   background: #2f303a;
-
-  @media screen and(min-width:768px) and(max-width: 1199px) {
-    padding-left: 76px;
-    padding-right: 89px;
-  }
 }
 
 .footer__link {
@@ -45,34 +40,37 @@
 .footer__social {
   display: flex;
   flex-wrap: wrap;
-	justify-content: center;
+  justify-content: center;
 
   max-width: 206px;
   max-height: 80px;
 
   @media screen and(max-width: 767px) {
-		margin-top: 60px;
-		margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 
 .footer__container {
-  display: flex;
+  @include centeredFlex();
 
   @media screen and(max-width: 767px) {
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
 
-  //   @media screen and(min-width: 768px) and(max-width: 1199px) {
-  //     position: relative;
-  //     flex-direction: column;
-  //   }
+  @media screen and(min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-  //   @media screen and(min-width: 1200px) {
-  //     justify-content: space-between;
-  //   }
+  @media screen and (min-width: 768px) and(max-width: 1023px) {
+    padding-left: 75px;
+    padding-right: 90px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .footer__list-item:not(:last-child) {
@@ -101,16 +99,14 @@
   fill: $main-bg-color;
 }
 
-
 .footer__list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
 .footer__logo-contacts {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
