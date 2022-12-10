@@ -679,6 +679,13 @@ address {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
 
 .footer__container {
   display: -webkit-box;
@@ -708,8 +715,9 @@ address {
             justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
+    gap: 60px;
     padding-left: 75px;
     padding-right: 90px;
   }
@@ -765,6 +773,13 @@ address {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
 
 .footer__logo-contacts {
   display: -webkit-box;
@@ -778,6 +793,13 @@ address {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo-contacts {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
 
 .footer__input-label {
   margin-bottom: 20px;
@@ -787,6 +809,11 @@ address {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .footer__input-label {
+    text-align: left;
+  }
 }
 
 .footer__input-field {
@@ -1401,7 +1428,6 @@ textarea::placeholder {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -1461,6 +1487,10 @@ textarea::placeholder {
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work__description {
+  text-align: center;
 }
 
 .portfolio__link {
