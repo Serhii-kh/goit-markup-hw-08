@@ -425,6 +425,12 @@ address {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-mobile/bg-mobile.jpg);
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-mobile/bg-mobile.jpg);
 }
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-mobile/bg-mobile@2x.jpg);
@@ -1641,9 +1647,25 @@ textarea::placeholder {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 319px) {
   .modal {
-    max-width: 450px;
+    min-width: 315px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .modal {
+    min-width: 365px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .modal {
+    min-width: 415px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {

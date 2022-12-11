@@ -11,10 +11,22 @@
   @include generalTransition(transform);
   transform: translate(-50%, -50%) scale(1);
 
+ @media screen and(min-width: 319px) {
+    min-width: 315px;
+  }
 
+ @media screen and(min-width: 375px) {
+    min-width: 365px;
+  }
 
-  @media screen and(max-width: 1199px) {
-    max-width: 450px;
+	 @media screen and(min-width: 425px) {
+    min-width: 415px;
+  }
+
+	
+  @media screen and(min-width: 768px) {
+    min-width: 450px;
+		min-height: 609px;
   }
 
   @media screen and(min-width: 1200px) {
@@ -60,13 +72,9 @@
   border: 2px solid $main-color;
   border-radius: 2px;
 
-@media screen and(min-width: 410px) {
-bottom: 2px;
-}
-
-  // @media screen and(min-width: 768px) {
-  //   left: 5px;
-  // }
+  @media screen and(min-width: 410px) {
+    bottom: 2px;
+  }
 
   @media screen and(min-width:1200px) {
     bottom: 5px;
